@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-zak.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-zak.css" />
     <title>Films de science fiction</title>
-</head>
-<body>
+    <link rel="stylesheet" href="stylegaby.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Films de fictions</h1>
-        <h2>bienvenue</h2>
+      <h1 class="title-header">Films de science fictions</h1>
+      <nav>
+        <ul>
+          <li><a href="#info">INFO</a></li>
+          <li><a href="#aboutus">ABOUT US</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
+      <section class="first-section">
         <h1>C'est quoi la science fiction ?</h1>
-        </section>
+        <img src="img/science-fiction-wallpaper.jpg" />
+      </section>
 
-
-        <section id="card1">
-
-            <div class="c1">
-                    <img src="images.jpg" alt="fimage">
-                    <h2>Everything Everywhere All at Once</h2>
-                    <p>Description</p>
-            </div>
-
-            <div class="c1">
-                    <img src="images1.jpg" alt="fimage">
-                    <h2>Dune</h2>
-                    <p>Description</p>
-            </div>
-
-            <div class="c1">
-                    <img src="images2.jpg" alt="fimage">
-                    <h2>Tene</h2>
-                    <p>Description</p>
-            </div>
- 
-        </section>
-
-        <section id="card2">
-            
+      <section id="card1">
         <div class="c1">
-            <img src="images3.jpg" alt="fimage">
-            <h2>Nope</h2>
-            <p>Description</p>
+          <img src="images.jpg" alt="fimage" />
+          <h2>Everything Everywhere All at Once</h2>
+          <p>Description</p>
         </div>
 
         <div class="c1">
-            <img src="images4.jpg" alt="fimage">
-            <h2>The Matrix </h2>
-            <p>Description</p>
+          <img src="images1.jpg" alt="fimage" />
+          <h2>Dune</h2>
+          <p>Description</p>
         </div>
 
         <div class="c1">
-            <img src="images5 .jpg" alt="fimage">
-            <h2>Les Éternels</h2>
-            <p>Description</p>
+          <img src="images2.jpg" alt="fimage" />
+          <h2>Tene</h2>
+          <p>Description</p>
         </div>
-         
-    </section>
-             
+      </section>
+
+      <section id="card2">
+        <div class="c1">
+          <img src="images3.jpg" alt="fimage" />
+          <h2>Nope</h2>
+          <p>Description</p>
+        </div>
+
+        <div class="c1">
+          <img src="images4.jpg" alt="fimage" />
+          <h2>The Matrix</h2>
+          <p>Description</p>
+        </div>
+
+        <div class="c1">
+          <img src="images5 .jpg" alt="fimage" />
+          <h2>Les Éternels</h2>
+          <p>Description</p>
+        </div>
+      </section>
+
+      <section>
+        <form method="post">
+          <h2>Contact us</h2>
+          <fieldset>
+            <label for="pseudo">Pseudo</label>
+            <input
+              type="text"
+              name="pseudo"
+              placeholder="Your pseudo"
+              required
+            />
+            <label for="pseudo">Email</label>
+            <input type="email" name="email" placeholder="You email" required />
+            <label for="pseudo">Comment</label>
+            <input
+              class="comment"
+              type="text"
+              name="comment"
+              placeholder="Enter your comment"
+            />
+            <button type="submit">Envoyer</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <ul>
-            <li>Header</li>
-            <li>First section</li>
-            <li>Second section</li>
-            <li>Formulaire</li>
-        </ul>
+      <ul>
+        <li><a href="#">Header</a></li>
+        <li><a href="#">First section</a></li>
+        <li><a href="#">Second section</a></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
