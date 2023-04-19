@@ -68,6 +68,8 @@ main {
     background-color: #BDD8F1;
     height: 50%;
 }
+
+/*
 section form{
     
     background: #3667A6;
@@ -89,6 +91,7 @@ section form fieldset{
 section form fieldset label{
     font-size: 20px;
 }
+
 section form fieldset .comment{
     flex-basis: 100px;
 }
@@ -109,5 +112,5 @@ footer ul li a{
     text-decoration: none;
     color: white;
 }
-
+*/
 
