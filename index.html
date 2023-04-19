@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style-zak.css" />
     <title>Films de science fiction</title>
     <link rel="stylesheet" href="stylegaby.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylealex.css" />
+    
   </head>
   <body>
     <header>
@@ -86,27 +87,23 @@
         </div>
       </section>
 
-      <section>
+      <section class="form_section">
         <form method="post">
-          <h2>Contact us</h2>
           <fieldset>
-            <label for="pseudo">Pseudo</label>
-            <input
-              type="text"
-              name="pseudo"
-              placeholder="Your pseudo"
-              required
-            />
-            <label for="pseudo">Email</label>
-            <input type="email" name="email" placeholder="You email" required />
-            <label for="pseudo">Comment</label>
-            <input
-              class="comment"
-              type="text"
-              name="comment"
-              placeholder="Enter your comment"
-            />
-            <button type="submit">Envoyer</button>
+
+          <h2>Contact us</h2>
+          
+          <label class ="label" for="pseudo">Pseudo</label>
+          <input class="pseudo" type="text" name="pseudo" placeholder="Your pseudo" required />
+
+          <label class ="label" for="email">Email</label>
+          <input class="email" type="email" name="email" placeholder="Your email" required />
+
+          <label class ="label" for="comment">Comment</label>
+          <input class="comment" type="text" name="comment" placeholder="Enter your comment" />
+
+          <button type="submit">Envoyer</button>
+
           </fieldset>
         </form>
       </section>
@@ -114,9 +111,8 @@
 
     <footer>
       <ul>
-        <li><a href="#">Header</a></li>
-        <li><a href="#">First section</a></li>
-        <li><a href="#">Second section</a></li>
+        <li><a href="#">Article</a></li>
+        <li><a href="#">Movies</a></li>
       </ul>
     </footer>
   </body>
