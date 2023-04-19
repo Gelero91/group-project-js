@@ -8,6 +8,8 @@ body{
     font-family: "GoodTimes";
 }
 
+/* HEADER */
+
 header {
     width: 100%;
     height: 50px;
@@ -22,7 +24,7 @@ header {
 .title-header {
     color: #82A6CB;
     font-size: min(5vw, 1.2em);
-    text-align: center;
+    margin-left:10px;
 }
 
 
@@ -64,53 +66,62 @@ main {
     padding-top: 50px;
   }
 
-.first-section{
-    background-color: #BDD8F1;
+/* SECTION 1 */
+
+.first-section {
+    padding: 20px;
     height: 50%;
+    background: linear-gradient(326deg, rgba(2, 0, 36, 1) 0%, rgba(28, 108, 182, 1) 81%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
 }
 
-/*
-section form{
-    
-    background: #3667A6;
-    justify-content: center;
-    padding: 15px;
-    
-}
-section form  h2{
-    font-size: 25px;
-    margin: 10px;
-}
-section form fieldset{
-    margin-left: 40px; 
+.section-text {
     display: flex;
     flex-direction: column;
-    
-}
-
-section form fieldset label{
-    font-size: 20px;
-}
-
-section form fieldset .comment{
-    flex-basis: 100px;
-}
-
-footer{
+    width: 80%;
+    margin: 0px auto 10px auto;
     padding: 20px;
-    background: #214177;
+    background: linear-gradient(326deg, rgba(87, 69, 219, 1) 0%, rgba(172, 100, 215, 1) 51%, rgba(110, 191, 208, 1) 89%);
+    border-radius: 40px;
+}
+
+.section-text h1 {}
+
+.section-text p {
+    font-size: small;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow {
+    font-size: 36px;
     color: white;
+    cursor: pointer;
 }
-footer ul{
-    list-style: none;
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
 }
-footer ul li{
-    margin-bottom: 10px;
-    font-size: 20px;
+
+.dot:first-child {
+    margin-left: 0;
 }
-footer ul li a{
-    text-decoration: none;
-    color: white;
+
+.dot:last-child {
+    margin-right: 0;
 }
-*/
+
+
 
