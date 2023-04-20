@@ -3,6 +3,15 @@
     src: url(fonts/good-times-rg.otf);
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
     font-family: "GoodTimes";
@@ -13,12 +22,13 @@ body{
 header {
     width: 100%;
     height: 50px;
-    background-color: #214177;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 40, 1) 100%, rgba(73, 77, 96, 1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .title-header {
@@ -62,40 +72,87 @@ li > a {
     text-decoration: none;
 }
 
-main {
-    padding-top: 50px;
-  }
-
-/* SECTION 1 */
-
-.first-section {
-    padding: 20px;
-    height: 50%;
-    background: linear-gradient(326deg, rgba(2, 0, 36, 1) 0%, rgba(28, 108, 182, 1) 81%, rgba(0, 212, 255, 1) 100%);
-    position: relative;
+.menu-icon {
+    display: none;
 }
 
-.section-text {
-    display: flex;
+
+/* Media Query for Header */
+@media screen and (max-width: 600px) {
+    
+    nav {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #1b1b32;
+        z-index: 1;
+    }
+
+    nav>ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav>ul>li {
+        display: block;
+        margin: 0.5rem;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
+        color: #82A6CB;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 373px){
+    .title-header {
+        display: none;
+    }
+}
+    
+
+/* MAIN */
+
+main {
+    padding-top: 50px;
+}
+
+/* BANNER */
+
+.banner {
+    display:flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(73, 77, 96, 1) 0%, rgba(26, 26, 40, 1) 100%);
+}
+
+.banner-text {
+    color: #82A6CB;
     flex-direction: column;
     width: 80%;
     margin: 0px auto 10px auto;
-    padding: 20px;
-    background: linear-gradient(326deg, rgba(87, 69, 219, 1) 0%, rgba(172, 100, 215, 1) 51%, rgba(110, 191, 208, 1) 89%);
+    padding: 40px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 40, 1) 100%, rgba(73, 77, 96, 1) 100%);
     border-radius: 40px;
 }
 
-.section-text h1 {}
-
-.section-text p {
-    font-size: small;
+.banner-text p {
+    font-size: 16px;
 }
 
 .navigation {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 2px;
+    bottom: 65px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -123,5 +180,20 @@ main {
     margin-right: 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .banner-text {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+    }
 
+    .navigation {
+        bottom: 20px;
+    }
+
+    .dot{
+        display:none;
+    }
+}
 

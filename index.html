@@ -8,7 +8,6 @@
     <title>Films de science fiction</title>
     <link rel="stylesheet" href="stylegaby.css" />
     <link rel="stylesheet" href="stylealex.css" />
-    
   </head>
   <body>
     <header>
@@ -20,11 +19,12 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
+      <span class="menu-icon">&#9776;</span>
     </header>
 
     <main>
-      <section class="first-section">
-        <div class="section-text">
+      <section class="banner">
+        <div class="banner-text">
           <h1>C'est quoi la science fiction ?</h1>
           <p>
             La science-fiction est un genre littéraire, cinématographique et
@@ -90,20 +90,35 @@
       <section class="form_section">
         <form method="post">
           <fieldset>
+            <h2>Contact us</h2>
 
-          <h2>Contact us</h2>
-          
-          <label class ="label" for="pseudo">Pseudo</label>
-          <input class="pseudo" type="text" name="pseudo" placeholder="Your pseudo" required />
+            <label class="label" for="pseudo">Pseudo</label>
+            <input
+              class="pseudo"
+              type="text"
+              name="pseudo"
+              placeholder="Your pseudo"
+              required
+            />
 
-          <label class ="label" for="email">Email</label>
-          <input class="email" type="email" name="email" placeholder="Your email" required />
+            <label class="label" for="email">Email</label>
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
 
-          <label class ="label" for="comment">Comment</label>
-          <input class="comment" type="text" name="comment" placeholder="Enter your comment" />
+            <label class="label" for="comment">Comment</label>
+            <input
+              class="comment"
+              type="text"
+              name="comment"
+              placeholder="Enter your comment"
+            />
 
-          <button type="submit">Envoyer</button>
-
+            <button type="submit">Envoyer</button>
           </fieldset>
         </form>
       </section>
