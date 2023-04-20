@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/stylegaby.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Films de science fiction</title>
+    <link rel="stylesheet" href="stylegaby.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -23,8 +25,27 @@
 
     <main>
       <section class="first-section">
-        <h1>C'est quoi la science fiction ?</h1>
-        <img src="img/science-fiction-wallpaper.jpg" />
+        <div class="section-text">
+          <h1>C'est quoi la science fiction ?</h1>
+          <p>
+            La science-fiction est un genre littéraire, cinématographique et
+            artistique qui imagine des mondes et des technologies avancées qui
+            n'existent pas encore dans notre réalité. Elle se concentre souvent
+            sur les questions scientifiques, technologiques et sociales
+            hypothétiques et explore les conséquences potentielles de ces
+            avancées sur la société, les individus et l'environnement. La
+            science-fiction peut être utilisée pour susciter la réflexion sur
+            des problèmes contemporains ou pour inspirer l'innovation dans des
+            domaines tels que la science, la technologie et la philosophie.
+          </p>
+        </div>
+        <div class="navigation">
+          <span class="arrow prev">&#8592;</span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="arrow next">&#8594;</span>
+        </div>
       </section>
 
       <section id="zak">
@@ -145,27 +166,23 @@
           </div>
         </section> -->
 
-      <section>
+      <section class="form_section">
         <form method="post">
-          <h2>Contact us</h2>
           <fieldset>
-            <label for="pseudo">Pseudo</label>
-            <input
-              type="text"
-              name="pseudo"
-              placeholder="Your pseudo"
-              required
-            />
-            <label for="pseudo">Email</label>
-            <input type="email" name="email" placeholder="You email" required />
-            <label for="pseudo">Comment</label>
-            <input
-              class="comment"
-              type="text"
-              name="comment"
-              placeholder="Enter your comment"
-            />
-            <button type="submit">Envoyer</button>
+            
+          <h2>Contact us</h2>
+          
+          <label class ="label" for="pseudo">Pseudo</label>
+          <input class="pseudo" type="text" name="pseudo" placeholder="" required />
+
+          <label class ="label" for="email">Email</label>
+          <input class="email" type="email" name="email" placeholder="" required />
+
+          <label class ="label" for="comment">Comment</label>
+          <textarea class="comment" name="comment" rows="10" cols="30" placeholder=""></textarea>
+
+          <button type="submit">Envoyer</button>
+
           </fieldset>
         </form>
       </section>
@@ -173,9 +190,9 @@
 
     <footer>
       <ul>
-        <li><a href="#">Header</a></li>
-        <li><a href="#">First section</a></li>
-        <li><a href="#">Second section</a></li>
+        <li><a href="#">Articles <p>&#9777</p></a></li>
+        <li><a href="#">Movies <p>&#9778</p></a></li>
+        <li><a href="#">Contact <p>&#9780</p></a></li>
       </ul>
     </footer>
   </body>

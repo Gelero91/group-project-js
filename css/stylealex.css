@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "GoodTimes";
+    src: url(fonts/good-times-rg.otf);
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.form_section{
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(218, 211, 211) 0%, rgba(73, 77, 96, 1) 0%, rgba(26, 26, 40, 1) 100%);
+}
+section form {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 40, 1) 100%, rgba(73, 77, 96, 1) 100%);
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section form fieldset{
+    width: 70%;
+    height: 90%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    color: white;
+    align-items: center;   
+}
+section form fieldset h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 0px;
+    align-self: center;
+}
+fieldset .label{
+    font-size: 11px;
+    margin: 10px 0px 5px 0px; 
+}
+fieldset .pseudo, .email{
+    border-radius: 10px;
+    width: 60%;
+    height: 20px;
+    font-size: 15px;
+    background: rgb(255, 255, 255); 
+}
+.comment{
+    border-radius: 10px;
+    width: 80%;
+    height: 45%;
+    font-size: 15px;
+    background:  rgb(255, 255, 255);
+}
+section form fieldset button{
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    font-family: "GoodTimes";
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background: rgb(189, 187, 195);    
+}
+footer{
+    padding: 10px;
+    background: rgb(250, 248, 248);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 40, 1) 100%, rgba(73, 77, 96, 1) 100%);
+    color: white;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+footer ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li p{
+    display: inline-block;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .form_section {
+            height: 100vh;
+            margin: 0;
+    }
+    section form {
+        background: rgb(0, 0, 0);
+        background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 40, 1) 100%, rgba(73, 77, 96, 1) 100%);
+        width: 100%;
+        height: 100%;
+    }
+    section form fieldset {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    section form fieldset h2 {
+        text-align: center;
+        font-size: 25px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    fieldset .label {
+        font-size: 10px;
+        margin: 15px 0px 5px 0px;
+    }
+    fieldset .pseudo,
+    .email,
+    .comment {
+        border-radius: 10px;
+        width: 50%;
+        height: 20px;
+        font-size: 15px;
+    }
+    .comment {
+        width : 70%;
+        height: 30%;
+    }
+
+    footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    footer ul li {
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer ul li p {
+        display: none;
+    }
+}
