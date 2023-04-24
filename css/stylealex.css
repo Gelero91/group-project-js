@@ -1,7 +1,8 @@
 @font-face {
     font-family: "GoodTimes";
-    src: url(fonts/good-times-rg.otf);
+    src: url(../fonts/good-times-rg.otf);
 }
+
 html,body {
     width: 100%;
     height: 100%;
