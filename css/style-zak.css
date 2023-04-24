@@ -167,25 +167,25 @@ card-stats{
      font-weight: 400px;
      z-index: 1;
      transition: 0.5s;
-     backdrop-filter: blur(15px);
+     /* backdrop-filter: blur(15px); */
  }
 
   .btn:hover a {
      letter-spacing: 3px;
  }
 
-  .btn a::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 50%;
-     height: 100%;
-     background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
-     transform: skewX(45deg) translate(0);
-     transition: 0.5s;
-     filter: blur(0px);
- }
+    .btn a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+        transform: skewX(45deg) translate(0);
+        transition: 0.5s;
+        filter: blur(0px);
+    }
  .btn:hover a::before {
      transform: skewX(45deg) translate(200px);
  }
@@ -193,54 +193,51 @@ card-stats{
      content: "";
      position: absolute;
      left: 50%;
-     transform: translatex(-50%);
      bottom: -5px;
-     width: 30px;
-     height: 10px;
-     background: #82A6CB;
-     border-radius: 10px;
+     
      transition: 0.5s;
      transition-delay: 0.5;
- }
-  .btn:hover::before
-
- /*lightup button*/
-     {
-     bottom: 0;
+    }
+    
+    /*lightup button*/
+    .btn:hover::before
+    {
+        background: #82A6CB;
+        transform: translatex(-50%);
+        bottom: 0;
      height: 50%;
      width: 80%;
      border-radius: 30px;
  }
 
-  .btn::after {
-     content: "";
-     position: absolute;
-     left: 50%;
-     transform: translatex(-50%);
-     top: -5px;
-     width: 30px;
-     height: 10px;
-     background: #82A6CB;
-     border-radius: 10px;
-     transition: 0.5s;
-     transition-delay: 0.5;
- }
+  /* .btn::after { */
+     /* content: ""; */
+     /* position: absolute; */
+     /* left: 50%; */
+     /* transform: translatex(-50%); */
+     /* top: -5px; */
+     /* width: 30px; */
+     /* height: 10px; */
+     /* background: #82A6CB; */
+     /* border-radius: 10px; */
+     /* transition: 0.5s; */
+     /* transition-delay: 0.5; */
+ /* } */
 
-   .btn:hover::after
-
+ 
  /*lightup button*/
-     {
-     top: 0;
-     height: 50%;
-     width: 80%;
-     border-radius: 30px;
- }
+    /* .btn:hover::after
+        {
+        top: 0;
+        height: 50%;
+        width: 80%;
+        border-radius: 30px;
+    } */
 
    .btn:nth-child(1)::before,
  /*chnage 1*/
    .btn:nth-child(1)::after {
-     background: #82A6CB;
-     box-shadow: 0 0 5px #82A6CB, 0 0 15px #82A6CB, 0 0 30px #82A6CB,
+      box-shadow: 0 0 5px #82A6CB, 0 0 15px #82A6CB, 0 0 30px #82A6CB,
          0 0 60px #82A6CB;
  }
 
@@ -248,7 +245,7 @@ card-stats{
  
  
  
-  @media (max-width: 1500px) {
+  @media (max-width: 600px) {
       #zak {
            grid-template-columns: repeat(2, 1fr);
             
