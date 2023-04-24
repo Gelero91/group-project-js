@@ -1,6 +1,6 @@
 @font-face {
     font-family: "GoodTimes";
-    src: url(fonts/good-times-rg.otf);
+    src: url(../fonts/good-times-rg.otf);
 }
 
 html,
@@ -76,6 +76,9 @@ li > a {
     display: none;
 }
 
+.mobile-menu{
+    display: none;
+}
 
 /* Media Query for Header */
 @media screen and (max-width: 600px) {
@@ -88,16 +91,6 @@ li > a {
         width: 100%;
         background-color: #1b1b32;
         z-index: 1;
-    }
-
-    nav>ul {
-        display: block;
-        text-align: center;
-    }
-
-    nav>ul>li {
-        display: block;
-        margin: 0.5rem;
     }
 
     .menu-icon {
@@ -163,6 +156,7 @@ main {
     cursor: pointer;
 }
 
+
 .dot {
     height: 10px;
     width: 10px;
@@ -180,16 +174,33 @@ main {
     margin-right: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    .banner-text {
+@media only screen and (max-width: 600px) {
+    .banner{
         width: 100%;
+        height: 100%;
         margin: 0;
-        padding: 20px;
-        border-radius: 0;
+    }
+
+    .banner-text {
+        height: 100%;
+        width: 100%;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: unset;
     }
 
     .navigation {
         bottom: 20px;
+    }
+
+    .prev {
+        margin-right: 10px;
+    }
+
+    .next{
+        margin-left:10px
     }
 
     .dot{
