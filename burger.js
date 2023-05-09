@@ -32,6 +32,8 @@ li3.appendChild(link3);
 
 // Ajouter les classes nécessaires pour le style du menu hamburger
 nav.classList.add("menu-burger");
+ul.classList.add("list-activ");
+ul.classList.add("pas-voyant");
 li1.classList.add("menu-item-burger");
 li2.classList.add("menu-item-burger");
 li3.classList.add("menu-item-burger");
@@ -50,11 +52,15 @@ nav.insertBefore(hamburgerBtn, ul);
 // Ajouter l'événement au bouton hamburger
 hamburgerBtn.addEventListener("click", function () {
   this.classList.toggle("active");
-  nav.classList.toggle("active");
+
+  ul.classList.toggle("voyant");
+  ul.classList.toggle("pas-voyant");
 });
 
 console.log("nav", nav);
 
 // Ajouter la navigation à la page
-const menuJS=document.getElementById("menuJS");
+const menuJS = document.getElementById("menuJS");
 menuJS.appendChild(nav);
+
+
